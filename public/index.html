@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D&D Character Sheet</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&D Character Sheet</title>
 </head>
 <body>
+  <header>
+    <h1>D&D Character Sheet</h1>
+
+    <nav>
+      <!-- Home / Landing Page -->
+      <!-- Login / Logout -->
+      <!-- Character Sheet -->
+      <!-- Features -->
+    </nav>
+  </header>
+  <main id="character-sheet">
     <section class="sheet" id="character-section">
-        <label id="character-name">
-            Character Name<input type="text" id="NOTHING" name="character-name">
-        </label>
-        <input type="text" id="NOTHING">
-        <input type="text" id="NOTHING">
-        <input type="text" id="NOTHING">
-        <input type="text" id="NOTHING">
-        <input type="text" id="NOTHING">
-        <input type="text" id="NOTHING">
-        <button id="submit">Dis is a Button</button>
+      
+      
+      <form action="">
+        <label for="character-name">Character Name</label>
+        <br>
+        <input id="character-name" name="character-name" type="text" title="Record your character's name here. e.g.: Steven, the not so terrible. In the race section of the players handbook there are lists of suggested names and naming traditions for your chosen race." value="Steven">
+        <br>
+        <br>
+        
+        <label for="character-class">Last name:</label>
+        <br>
+        <input id="character-class" name="character-class" type="text" title="Chosen class. e.g.: Fighter" value="Fighter">
+        <br>
+        <br>
+        
+        <label for="experience-points">Experience Points</label>
+        <br>
+        <input title="Record XP gained from playing. Note: You can do milestone leveling." value="44" type="text" id="experience-points" name="experience-points"/>
+        
+        <br>
+        <br>
+        <br>
+
+        <label>Click when ready:</label>
+        <input type="submit" value="Submit">
+      </form>
+
+      
+      <!-- <input type="text" id="NOTHING">
+      <input type="text" id="NOTHING">
+      <input type="text" id="NOTHING">
+      <input type="text" id="NOTHING">
+      <input type="text" id="NOTHING">
+      <input type="text" id="NOTHING">
+      <button id="submit">Dis is a Button</button>
     </section>
     <section class="sheet" id="attributes"></section>
     <section class="sheet" id="inspiration"></section>
@@ -33,6 +69,8 @@
     <section class="sheet" id="perception"></section>
     <section class="sheet" id="other"></section>
     <section class="sheet" id="equipment"></section>
-    <section class="sheet" id="features-and-traits"></section>
+    <section class="sheet" id="features-and-traits"></section> -->
+  </main>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
