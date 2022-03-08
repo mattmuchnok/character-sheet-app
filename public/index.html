@@ -21,7 +21,7 @@
     <section class="sheet" id="character-section">
       
       
-      <form action="">
+      <div>
         <label for="character-name">Character Name</label>
         <br>
         <input id="character-name" name="character-name" type="text" title="Record your character's name here. e.g.: Steven, the not so terrible. In the race section of the players handbook there are lists of suggested names and naming traditions for your chosen race." value="Steven">
@@ -43,8 +43,8 @@
         <br>
 
         <label>Click when ready:</label>
-        <input type="submit" value="Submit">
-      </form>
+        <button id="sheet-button" onclick="sendSheet()">Just Send It</button>
+      </div>
 
       
       <!-- <input type="text" id="NOTHING">
@@ -71,6 +71,7 @@
     <section class="sheet" id="equipment"></section>
     <section class="sheet" id="features-and-traits"></section> -->
   </main>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
 </html>
