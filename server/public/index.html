@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ADD CSS -->
   <title>D&D Character Sheet</title>
 </head>
 <body>
@@ -19,24 +20,22 @@
   </header>
   <main id="character-sheet">
     <section class="sheet" id="character-section">
-      
-      
       <div>
         <label for="character-name">Character Name</label>
         <br>
-        <input id="character-name" name="character-name" type="text" title="Record your character's name here. e.g.: Steven, the not so terrible. In the race section of the players handbook there are lists of suggested names and naming traditions for your chosen race." value="Steven">
+        <input id="character-name" name="character-name" type="text" title="Record your character's name here. e.g.: Steven, the not so terrible. In the race section of the players handbook there are lists of suggested names and naming traditions for your chosen race." value="Kyle">
         <br>
         <br>
         
         <label for="character-class">Last name:</label>
         <br>
-        <input id="character-class" name="character-class" type="text" title="Chosen class. e.g.: Fighter" value="Fighter">
+        <input id="character-class" name="character-class" type="text" title="Chosen class. e.g.: Fighter" value="Mage">
         <br>
         <br>
         
         <label for="experience-points">Experience Points</label>
         <br>
-        <input title="Record XP gained from playing. Note: You can do milestone leveling." value="44" type="text" id="experience-points" name="experience-points"/>
+        <input title="Record XP gained from playing. Note: You can do milestone leveling." value="200" type="text" id="experience-points" name="experience-points"/>
         
         <br>
         <br>
@@ -44,6 +43,16 @@
 
         <label>Click when ready:</label>
         <button id="sheet-button" onclick="sendSheet()">Just Send It</button>
+      </div>
+
+        <br>
+        <br>
+        <br>
+
+      <div>
+        <label for="lookup">Character Search:</label>
+        <input id="lookup" name="lookup" type="text">
+        <button id="lookup-btn" onclick="getSheet()">Just GeT It</button>
       </div>
 
       
