@@ -19,66 +19,312 @@
     </nav>
   </header>
   <main id="character-sheet">
+      <!-- Sample setup: -->
+      <!-- 
+        <label for="what">what</label>
+        <br>
+        <input id="what" name="what" type="what" title="what" value="what">
+        <br>
+        <br>
+      -->   
+    <div>
+    <!-- General character information: -->
     <section class="sheet" id="character-section">
-      <div>
-        <label for="character-name">Character Name</label>
-        <br>
-        <input id="character-name" name="character-name" type="text" title="Record your character's name here. e.g.: Steven, the not so terrible. In the race section of the players handbook there are lists of suggested names and naming traditions for your chosen race." value="Kyle">
-        <br>
-        <br>
-        
-        <label for="character-class">Last name:</label>
-        <br>
-        <input id="character-class" name="character-class" type="text" title="Chosen class. e.g.: Fighter" value="Mage">
-        <br>
-        <br>
-        
-        <label for="experience-points">Experience Points</label>
-        <br>
-        <input title="Record XP gained from playing. Note: You can do milestone leveling." value="200" type="text" id="experience-points" name="experience-points"/>
-        
-        <br>
-        <br>
-        <br>
-
-        <label>Click when ready:</label>
-        <button id="sheet-button" onclick="sendSheet()">Just Send It</button>
-      </div>
-
-        <br>
-        <br>
-        <br>
-
-      <div>
-        <label for="lookup">Character Search:</label>
-        <input id="lookup" name="lookup" type="text">
-        <button id="lookup-btn" onclick="getSheet()">Just GeT It</button>
-      </div>
-
+      <label for="character-name">Character Name</label>
+      <br>
+      <input id="character-name" name="character-name" type="text" title="Record your character's name here. e.g.: Steven, the not so terrible. In the race section of the players handbook there are lists of suggested names and naming traditions for your chosen race." value="Matthias">
+      <br>
+      <br>
       
-      <!-- <input type="text" id="NOTHING">
-      <input type="text" id="NOTHING">
-      <input type="text" id="NOTHING">
-      <input type="text" id="NOTHING">
-      <input type="text" id="NOTHING">
-      <input type="text" id="NOTHING">
-      <button id="submit">Dis is a Button</button>
+      <label for="character-class">Last Name</label>
+      <br>
+      <input id="character-class" name="character-class" type="text" title="Chosen class. e.g.: Fighter" value="Fighter">
+      <br>
+      <br>
+
+      <label for="level">Level</label>
+      <br>
+      <input id="level" name="level" type="text" title="Character level. e.g.: 3" value="3">
+      <br>
+      <br>
+
+      <label for="character-background">Background</label>
+      <br>
+      <input id="character-background" name="character-background" type="text" title="Chosen background. e.g.: Soldier" value="Student">
+      <br>
+      <br>
+
+      <label for="race">Race</label>
+      <br>
+      <input id="race" name="race" type="text" title="Chosen race. e.g.: Woodland Elf" value="Human">
+      <br>
+      <br>
+
+      <label for="alignment">Alignment</label>
+      <br>
+      <input id="alignment" name="alignment" type="text" title="Chosen alignment. e.g.: Lawful Good" value="Chaotic Good">
+      <br>
+      <br>
+      
+      <label for="experience-points">Experience Points</label>
+      <br>
+      <input title="Record XP gained from playing. Note: You can do milestone leveling." value="2345" type="text" id="experience-points" name="experience-points"/>
+      <br>
+      <br>
     </section>
-    <section class="sheet" id="attributes"></section>
-    <section class="sheet" id="inspiration"></section>
-    <section class="sheet" id="proficiency-bonus"></section>
-    <section class="sheet" id="character-stats"></section>
-    <section class="sheet" id="saving-throws"></section>
-    <section class="sheet" id="skills"></section>
+    <!-- Big 6 attributes: -->
+    <section class="sheet" id="attributes">
+      <label for="strength">Strength</label>
+      <br>
+      <input id="strength" name="strength" type="text" title="Strength (STR), measuring physical power" value="10">
+      <br>
+      <br>
+
+      <label for="dexterity">Dexterity</label>
+      <br>
+      <input id="dexterity" name="dexterity" type="text" title="Dexterity (DEX), measuring agility" value="10">
+      <br>
+      <br>
+
+      <label for="constitution">Constitution</label>
+      <br>
+      <input id="constitution" name="constitution" type="text" title="Constitution (CON), measuring endruance" value="10">
+      <br>
+      <br>
+
+      <label for="intelligence">Intelligence</label>
+      <br>
+      <input id="intelligence" name="intelligence" type="text" title="Intelligence (INT), measuring reasoning and memory" value="10">
+      <br>
+      <br>
+
+      <label for="wisdom">Wisdom</label>
+      <br>
+      <input id="wisdom" name="wisdom" type="text" title="Wisdom (WIS), measuring perception and insight" value="10">
+      <br>
+      <br>
+
+      <label for="charisma">Charisma</label>
+      <br>
+      <input id="charisma" name="charisma" type="text" title="Charisma (CHA), measuring force of personality" value="10">
+      <br>
+      <br>
+    </section>
+    <!-- Inspiration input only: -->
+    <section class="sheet" id="inspiration-section">
+      <label for="inspiration">Inspiration</label>
+      <br>
+      <input id="inspiration" name="inspiration" type="text" title="Inspiration allows you to pick a roll to have advantage on. You can't store inspiration for later use, you either have it or you don't. DMs award inspiration when you play out your personality traits, give in to the drawbacks presented by a flaw or bond, and otherwise portray your character in a compelling way." value="0">
+      <br>
+      <br>
+    </section>
+    <!-- Proficiency bonus input only: -->
+    <section class="sheet" id="proficiency-bonus-section">
+      <label for="proficiency-bonus">Proficiency Bonus</label>
+      <br>
+      <input id="proficiency-bonus" name="proficiency-bonus" type="text" title="Characters have a proficiency bonus determined by level. Note: Your proficiency bonus can't be added more than once. Everyone has the same proficiency at the same levels. Levels 1-4 = +2, levels 5-8 = +3, levels 9-12 = +4, levels 13-16 = +5, levels 17-20 = +6." value="2">
+      <br>
+      <br>
+    </section>
+    <!-- Perception input only: -->
+    <section class="sheet" id="perception-section">
+      <label for="perception">Passive Wisdom (Perception)</label>
+      <br>
+      <input id="perception" name="perception" type="text" title="You will use this to see if you notice traps or sneaky enemies. Note: Your DM will probably use this so as not to arouse suspicion. Calculate by 10 + WIS. +5 for advantage, -5 for disadvantage. A creature must beat this score on a stealth check to not be noticed by your character." value="20">
+      <br>
+      <br>
+    </section>
+    <!-- Saving throws section of inputs: -->
+    <section class="sheet" id="saving-throws">
+      <label for="saving-strength">Strength (Saving)</label>
+      <br>
+      <input id="saving-strength" name="saving-strength" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="saving-dexterity">Dexterity (Saving)</label>
+      <br>
+      <input id="saving-dexterity" name="saving-dexterity" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="saving-constitution">Constitution (Saving)</label>
+      <br>
+      <input id="saving-constitution" name="saving-constitution" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="saving-intelligence">Intelligence (Saving)</label>
+      <br>
+      <input id="saving-intelligence" name="saving-intelligence" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="saving-wisdom">Wisdom (Saving)</label>
+      <br>
+      <input id="saving-wisdom" name="saving-wisdom" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="saving-charisma">Charisma (Saving)</label>
+      <br>
+      <input id="saving-charisma" name="saving-charisma" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0">
+      <br>
+      <br>
+    </section>
+    <!-- Proficiency score inputs for skills section: -->
+    <section class="sheet" id="skills">
+      <label for="skill-acrobatics">Acrobatics (Dex)</label>
+      <br>
+      <input id="skill-acrobatics" name="skill-acrobatics" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-animal-handling">Animal Handling (Wis)</label>
+      <br>
+      <input id="skill-animal-handling" name="skill-animal-handling" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-arcana">Arcana (Int)</label>
+      <br>
+      <input id="skill-arcana" name="skill-arcana" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-acrobatics">Acrobatics (Dex)</label>
+      <br>
+      <input id="skill-acrobatics" name="skill-acrobatics" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-athletics">Athletics (Str)</label>
+      <br>
+      <input id="skill-athletics" name="skill-athletics" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-deception">Deception (Cha)</label>
+      <br>
+      <input id="skill-deception" name="skill-deception" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-history">History (Int)</label>
+      <br>
+      <input id="skill-history" name="skill-history" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-insight">Insight (Wis)</label>
+      <br>
+      <input id="skill-insight" name="skill-insight" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-intimidation">Intimidation (Cha)</label>
+      <br>
+      <input id="skill-intimidation" name="skill-intimidation" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-investigation">Investigation (Int)</label>
+      <br>
+      <input id="skill-investigation" name="skill-investigation" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-medicine">Medicine (Wis)</label>
+      <br>
+      <input id="skill-medicine" name="skill-medicine" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-nature">Nature (Int)</label>
+      <br>
+      <input id="skill-nature" name="skill-nature" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-perception">Perception (Wis)</label>
+      <br>
+      <input id="skill-perception" name="skill-perception" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-performance">Performance (Cha)</label>
+      <br>
+      <input id="skill-performance" name="skill-performance" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-persuasion">Persuasion (Cha)</label>
+      <br>
+      <input id="skill-persuasion" name="skill-persuasion" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-religion">Religion (Int)</label>
+      <br>
+      <input id="skill-religion" name="skill-religion" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-sleight-of-hand">Sleight of Hand (Dex)</label>
+      <br>
+      <input id="skill-sleight-of-hand" name="skill-sleight-of-hand" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-stealth">Stealth (Dex)</label>
+      <br>
+      <input id="skill-stealth" name="skill-stealth" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+
+      <label for="skill-survival">Survival (Wis)</label>
+      <br>
+      <input id="skill-survival" name="skill-survival" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0">
+      <br>
+      <br>
+    </section>
+    <!-- General, not-otherwise-classified stats input section -->
+    <section class="sheet" id="character-stats">
+      <label for="what">what</label>
+      <br>
+      <input id="what" name="what" type="what" title="what" value="what">
+      <br>
+      <br>
+    </section>
+    </div>
+    
+    <div>
+    <section class="sheet" id="btn-section">
+      <br>
+      <br>
+      <br>
+
+      <label>Click when ready:</label>
+      <button id="sheet-button" onclick="sendSheet()">Just Send It</button>
+
+      <br>
+      <br>
+      <br>
+
+      <label for="lookup">Character Search:</label>
+      <input id="lookup" name="lookup" type="text">
+      <button id="lookup-btn" onclick="getSheet()">Just GeT It</button>
+    </section>
+    </div>
+
     <section class="sheet" id="attacks-and-spellcasting"></section>
     <section class="sheet" id="personality-traits"></section>
     <section class="sheet" id="ideals"></section>
     <section class="sheet" id="bonds"></section>
     <section class="sheet" id="flaws"></section>
-    <section class="sheet" id="perception"></section>
     <section class="sheet" id="other"></section>
     <section class="sheet" id="equipment"></section>
-    <section class="sheet" id="features-and-traits"></section> -->
+    <section class="sheet" id="features-and-traits"></section>
   </main>
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
