@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ADD CSS -->
+  <link rel="stylesheet" href="styles.css">
   <title>D&D Character Sheet</title>
 </head>
 <body>
@@ -290,14 +290,102 @@
     </section>
     <!-- General, not-otherwise-classified stats input section -->
     <section class="sheet" id="character-stats">
-      <label for="what">what</label>
+      <label for="armor-class">Armor Class</label>
       <br>
-      <input id="what" name="what" type="what" title="what" value="what">
+      <input id="armor-class" name="armor-class" type="text" title="Your current AC. Note: Armor takes time to put on and off. Unarmored: 10 + DEX (unless your class has a feature). Armored: Specific Armor Entry + DEX (Unless it's heavy)." value="24">
+      <br>
+      <br>
+
+      <label for="initiative">Initiative</label>
+      <br>
+      <input id="initiative" name="initiative" type="text" title="Bonus added to initiative rolls. Note: Initiative is rolled to determine the turn order of combat. Calculated by 1d20 + DEX. Some spells and classes can add additional bonus." value="0">
+      <br>
+      <br>
+
+      <label for="speed">Speed</label>
+      <br>
+      <input id="speed" name="speed" type="text" title="How far you can move in combat. Your chosen race and class determines your movement speed. Movement speed changes depending on your mode of transport, environment, and spells cast on you." value="30">
+      <br>
+      <br>
+
+      <label for="hit-point-max">Hit Point Maximum</label>
+      <br>
+      <input id="hit-point-max" name="hit-point-max" type="text" title="Maximum health your character has. Determined by your class' hit dice + constitution modifier. e.g.: Druids hit dice is 1d8. 1st level = 1d8 + constitution modifier. For every level after, add 1d8 roll + constitution modifier." value="21">
+      <br>
+      <br>
+
+      <label for="hit-point-current">Current Hit Points</label>
+      <br>
+      <input id="hit-point-current" name="hit-point-current" type="text" title="Maximum health your character has. Determined by your class' hit dice + constitution modifier. e.g.: Druids hit dice is 1d8. 1st level = 1d8 + constitution modifier. For every level after, add 1d8 roll + constitution modifier." value="21">
+      <br>
+      <br>
+
+      <label for="hit-point-temporary">Temporary Hit Points</label>
+      <br>
+      <input id="hit-point-temporary" name="hit-point-temporary" type="text" title="Hit points on top of your maximum health. Some spells/clsses give temporary hit points. Temporary hit points do not regenerate and are the first to be lost when your character is damaged." value="0">
+      <br>
+      <br>
+
+      <label for="total-dice-left">Total (Dice)</label>
+      <br>
+      <input id="total-dice-left" name="total-dice-left" type="text" title="Your hit dice based on your chosen class. Total: How many hit dice you have left to roll. e.g.: A Druid's hit dice is a d8. At 3rd level they have 3d8s they can roll during a short rest to regain health equal to what they roll." value="3">
+      <br>
+      <br>
+      
+      <label for="hit-dice">Hit Dice</label>
+      <br>
+      <input id="hit-dice" name="hit-dice" type="text" title="Your hit dice based on your chosen class. Total: How many hit dice you have left to roll. e.g.: A Druid's hit dice is a d8. At 3rd level they have 3d8s they can roll during a short rest to regain health equal to what they roll." value="d8">
+      <br>
+      <br>
+      
+      <label for="death-save-successes">Successes (Death)</label>
+      <br>
+      <input id="death-save-successes" name="death-save-successes" type="text" title="If you are reduced to 0 hit points you are knocked out. Roll 1d20 on your turn to see if you survive or die, healing can revive you. You roll once per turn in combat, 10 or above is a success, 9 or below is a failure. If you roll 3 successes you stabilize, if you roll 3 failures you die." value="0">
+      <br>
+      <br>
+      
+      <label for="death-save-failures">Failures (Death)</label>
+      <br>
+      <input id="death-save-failures" name="death-save-failures" type="text" title="If you are reduced to 0 hit points you are knocked out. Roll 1d20 on your turn to see if you survive or die, healing can revive you. You roll once per turn in combat, 10 or above is a success, 9 or below is a failure. If you roll 3 successes you stabilize, if you roll 3 failures you die." value="0">
+      <br>
+      <br>
+    </section>
+    <!-- Personality traits text box: -->
+    <section class="sheet" id="personality-traits">
+      <label for="personality-box">Personality Traits</label>
+      <br>
+      <input id="personality-box" name="personality-box" type="text" title="what" value="Enter Here">
+      <br>
+      <br>
+    </section>
+    <!-- Ideals text box: -->
+    <section class="sheet" id="ideals">
+      <label for="ideals-box">Ideals</label>
+      <br>
+      <input id="ideals-box" name="ideals-box" type="text" title="what" value="Enter Here">
       <br>
       <br>
     </section>
     </div>
     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div>
     <section class="sheet" id="btn-section">
       <br>
@@ -318,8 +406,6 @@
     </div>
 
     <section class="sheet" id="attacks-and-spellcasting"></section>
-    <section class="sheet" id="personality-traits"></section>
-    <section class="sheet" id="ideals"></section>
     <section class="sheet" id="bonds"></section>
     <section class="sheet" id="flaws"></section>
     <section class="sheet" id="other"></section>

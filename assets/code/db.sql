@@ -90,40 +90,48 @@ CREATE TABLE stats (
 
 CREATE TABLE personality_traits (
   personality_id SERIAL PRIMARY KEY,
-  personality_character INT NOT NULL REFERENCES character(character_id)
+  personality_character INT NOT NULL REFERENCES character(character_id),
+  personality_box VARCHAR(250) NOT NULL DEFAULT 'Enter Here'
 );
 
 CREATE TABLE ideals (
   ideals_id SERIAL PRIMARY KEY,
-  ideals_character INT NOT NULL REFERENCES character(character_id)
+  ideals_character INT NOT NULL REFERENCES character(character_id),
+  ideals_box VARCHAR(250) NOT NULL DEFAULT 'Enter Here'
 );
 
 CREATE TABLE bonds (
   bonds_id SERIAL PRIMARY KEY,
-  bonds_character INT NOT NULL REFERENCES character(character_id)
+  bonds_character INT NOT NULL REFERENCES character(character_id),
+  bonds_box VARCHAR(250) NOT NULL DEFAULT 'Enter Here'
 );
 
 CREATE TABLE flaws (
   flaws_id SERIAL PRIMARY KEY,
-  flaws_character INT NOT NULL REFERENCES character(character_id)
+  flaws_character INT NOT NULL REFERENCES character(character_id),
+  flaws_box VARCHAR(250) NOT NULL DEFAULT 'Enter Here'
 );
 
 CREATE TABLE attacks_spellcasting (
   att_spell_id SERIAL PRIMARY KEY,
-  att_spell_character INT NOT NULL REFERENCES character(character_id)
+  att_spell_character INT NOT NULL REFERENCES character(character_id),
+  att_spell_box VARCHAR(250) NOT NULL DEFAULT 'Enter Here'
 );
 
 CREATE TABLE features_traits (
   features_id SERIAL PRIMARY KEY,
-  features_character INT NOT NULL REFERENCES character(character_id)
+  features_character INT NOT NULL REFERENCES character(character_id),
+  features_box VARCHAR(250) NOT NULL DEFAULT 'Enter Here'
 );
 
 CREATE TABLE equipment (
   equipment_id SERIAL PRIMARY KEY,
-  equipment_character INT NOT NULL REFERENCES character(character_id)
+  equipment_character INT NOT NULL REFERENCES character(character_id),
+  equipment_box VARCHAR(250) NOT NULL DEFAULT 'Enter Here'
 );
 
 CREATE TABLE other (
   other_id SERIAL PRIMARY KEY,
-  other_character INT NOT NULL REFERENCES character(character_id)
+  other_character INT NOT NULL REFERENCES character(character_id),
+  other_box VARCHAR(250) NOT NULL DEFAULT 'Enter Here'
 );
