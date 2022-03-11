@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>D&D Character Sheet</title>
+</head>
+<body>
+  <header>
+    <h1>D&D Character Sheet</h1>
+
+    <nav>
+      <!-- Home / Landing Page -->
+      <!-- Login / Logout -->
+      <!-- Character Sheet -->
+      <!-- Features -->
+    </nav>
+  </header>
+  <main id="character-sheet">
+      <!-- Sample setup: -->
+        <!-- <label for="what">what</label> -->
+        <!-- <br> -->
+        <!-- <input id="what" name="what" type="what" title="what" value="what"> -->
+        <!-- <br> -->
+        <!-- <br> -->
+    <div id="container-div">
+    <!-- General character information: -->
+    <section class="sheet" id="character-section">
+      <label for="character-name">Character Name
+      <!-- <br> -->
+      <input id="character-name" name="character-name" type="text" title="Record your character's name here. e.g.: Steven, the not so terrible. In the race section of the players handbook there are lists of suggested names and naming traditions for your chosen race." value="Matthias"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+      
+      <label for="character-class">Class
+      <!-- <br> -->
+      <input id="character-class" name="character-class" type="text" title="Chosen class. e.g.: Fighter" value="Fighter"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="level">Level
+      <!-- <br> -->
+      <input id="level" name="level" type="text" title="Character level. e.g.: 3" value="3"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="character-background">Background
+      <!-- <br> -->
+      <input id="character-background" name="character-background" type="text" title="Chosen background. e.g.: Soldier" value="Student"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="race">Race
+      <!-- <br> -->
+      <input id="race" name="race" type="text" title="Chosen race. e.g.: Woodland Elf" value="Human"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="alignment">Alignment
+      <!-- <br> -->
+      <input id="alignment" name="alignment" type="text" title="Chosen alignment. e.g.: Lawful Good" value="Chaotic Good"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+      
+      <label for="experience-points">Experience Points
+      <!-- <br> -->
+      <input title="Record XP gained from playing. Note: You can do milestone leveling." value="2345" type="text" id="experience-points" name="experience-points"/></label>
+      <!-- <br> -->
+      <!-- <br> -->
+    </section>
+    <!-- Big 6 attributes: -->
+    <section class="sheet" id="attributes">
+      <label for="strength">Strength
+      <!-- <br> -->
+      <input id="strength" name="strength" type="text" title="Strength (STR), measuring physical power" value="10"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="dexterity">Dexterity
+      <!-- <br> -->
+      <input id="dexterity" name="dexterity" type="text" title="Dexterity (DEX), measuring agility" value="10"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="constitution">Constitution
+      <!-- <br> -->
+      <input id="constitution" name="constitution" type="text" title="Constitution (CON), measuring endruance" value="10"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="intelligence">Intelligence
+      <!-- <br> -->
+      <input id="intelligence" name="intelligence" type="text" title="Intelligence (INT), measuring reasoning and memory" value="10"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="wisdom">Wisdom
+      <!-- <br> -->
+      <input id="wisdom" name="wisdom" type="text" title="Wisdom (WIS), measuring perception and insight" value="10"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="charisma">Charisma
+      <!-- <br> -->
+      <input id="charisma" name="charisma" type="text" title="Charisma (CHA), measuring force of personality" value="10"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+    </section>
+    <!-- Inspiration input only: -->
+    <section class="sheet" id="inspiration-section">
+      <label for="inspiration">Inspiration
+      <!-- <br> -->
+      <input id="inspiration" name="inspiration" type="text" title="Inspiration allows you to pick a roll to have advantage on. You can't store inspiration for later use, you either have it or you don't. DMs award inspiration when you play out your personality traits, give in to the drawbacks presented by a flaw or bond, and otherwise portray your character in a compelling way." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+    </section>
+    <!-- Proficiency bonus input only: -->
+    <section class="sheet" id="proficiency-bonus-section">
+      <label for="proficiency-bonus">Proficiency Bonus
+      <!-- <br> -->
+      <input id="proficiency-bonus" name="proficiency-bonus" type="text" title="Characters have a proficiency bonus determined by level. Note: Your proficiency bonus can't be added more than once. Everyone has the same proficiency at the same levels. Levels 1-4 = +2, levels 5-8 = +3, levels 9-12 = +4, levels 13-16 = +5, levels 17-20 = +6." value="2"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+    </section>
+    <!-- Perception input only: -->
+    <section class="sheet" id="perception-section">
+      <label for="perception">Passive Wisdom (Perception)
+      <!-- <br> -->
+      <input id="perception" name="perception" type="text" title="You will use this to see if you notice traps or sneaky enemies. Note: Your DM will probably use this so as not to arouse suspicion. Calculate by 10 + WIS. +5 for advantage, -5 for disadvantage. A creature must beat this score on a stealth check to not be noticed by your character." value="20"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+    </section>
+    <!-- Saving throws section of inputs: -->
+    <section class="sheet" id="saving-throws">
+      <label for="saving-strength">Strength (Saving)
+      <!-- <br> -->
+      <input id="saving-strength" name="saving-strength" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="saving-dexterity">Dexterity (Saving)
+      <!-- <br> -->
+      <input id="saving-dexterity" name="saving-dexterity" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="saving-constitution">Constitution (Saving)
+      <!-- <br> -->
+      <input id="saving-constitution" name="saving-constitution" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="saving-intelligence">Intelligence (Saving)
+      <!-- <br> -->
+      <input id="saving-intelligence" name="saving-intelligence" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="saving-wisdom">Wisdom (Saving)
+      <!-- <br> -->
+      <input id="saving-wisdom" name="saving-wisdom" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="saving-charisma">Charisma (Saving)
+      <!-- <br> -->
+      <input id="saving-charisma" name="saving-charisma" type="text" title="Attempt to resist a spell, a trap, a poison, a disease, or threat. Roll 1d20 and add your appropriate modifier. Each class gives proficiency in at least two saving throws. If your character is proficient in the saving throw, add the proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+    </section>
+    <!-- Proficiency score inputs for skills section: -->
+    <section class="sheet" id="skills">
+      <label for="skill-acrobatics">Acrobatics (Dex)
+      <!-- <br> -->
+      <input id="skill-acrobatics" name="skill-acrobatics" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-animal-handling">Animal Handling (Wis)
+      <!-- <br> -->
+      <input id="skill-animal-handling" name="skill-animal-handling" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-arcana">Arcana (Int)
+      <!-- <br> -->
+      <input id="skill-arcana" name="skill-arcana" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-acrobatics">Acrobatics (Dex)
+      <!-- <br> -->
+      <input id="skill-acrobatics" name="skill-acrobatics" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-athletics">Athletics (Str)
+      <!-- <br> -->
+      <input id="skill-athletics" name="skill-athletics" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-deception">Deception (Cha)
+      <!-- <br> -->
+      <input id="skill-deception" name="skill-deception" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-history">History (Int)
+      <!-- <br> -->
+      <input id="skill-history" name="skill-history" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-insight">Insight (Wis)
+      <!-- <br> -->
+      <input id="skill-insight" name="skill-insight" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-intimidation">Intimidation (Cha)
+      <!-- <br> -->
+      <input id="skill-intimidation" name="skill-intimidation" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-investigation">Investigation (Int)
+      <!-- <br> -->
+      <input id="skill-investigation" name="skill-investigation" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-medicine">Medicine (Wis)
+      <!-- <br> -->
+      <input id="skill-medicine" name="skill-medicine" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-nature">Nature (Int)
+      <!-- <br> -->
+      <input id="skill-nature" name="skill-nature" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-perception">Perception (Wis)
+      <!-- <br> -->
+      <input id="skill-perception" name="skill-perception" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-performance">Performance (Cha)
+      <!-- <br> -->
+      <input id="skill-performance" name="skill-performance" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-persuasion">Persuasion (Cha)
+      <!-- <br> -->
+      <input id="skill-persuasion" name="skill-persuasion" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-religion">Religion (Int)
+      <!-- <br> -->
+      <input id="skill-religion" name="skill-religion" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-sleight-of-hand">Sleight of Hand (Dex)
+      <!-- <br> -->
+      <input id="skill-sleight-of-hand" name="skill-sleight-of-hand" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-stealth">Stealth (Dex)
+      <!-- <br> -->
+      <input id="skill-stealth" name="skill-stealth" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="skill-survival">Survival (Wis)
+      <!-- <br> -->
+      <input id="skill-survival" name="skill-survival" type="text" title="Each ability score is broken down into specific skills. Your class and background tells you specific skills you can be proficient in. Use the relevant modifier to add to your roll. If you have chosen for your character to be proficient in a skill, add your proficiency bonus as well." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+    </section>
+    <!-- General, not-otherwise-classified stats input section -->
+    <section class="sheet" id="character-stats">
+      <label for="armor-class">Armor Class
+      <!-- <br> -->
+      <input id="armor-class" name="armor-class" type="text" title="Your current AC. Note: Armor takes time to put on and off. Unarmored: 10 + DEX (unless your class has a feature). Armored: Specific Armor Entry + DEX (Unless it's heavy)." value="24"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="initiative">Initiative
+      <!-- <br> -->
+      <input id="initiative" name="initiative" type="text" title="Bonus added to initiative rolls. Note: Initiative is rolled to determine the turn order of combat. Calculated by 1d20 + DEX. Some spells and classes can add additional bonus." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="speed">Speed
+      <!-- <br> -->
+      <input id="speed" name="speed" type="text" title="How far you can move in combat. Your chosen race and class determines your movement speed. Movement speed changes depending on your mode of transport, environment, and spells cast on you." value="30"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="hit-point-max">Hit Point Maximum
+      <!-- <br> -->
+      <input id="hit-point-max" name="hit-point-max" type="text" title="Maximum health your character has. Determined by your class' hit dice + constitution modifier. e.g.: Druids hit dice is 1d8. 1st level = 1d8 + constitution modifier. For every level after, add 1d8 roll + constitution modifier." value="21"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="hit-point-current">Current Hit Points
+      <!-- <br> -->
+      <input id="hit-point-current" name="hit-point-current" type="text" title="Maximum health your character has. Determined by your class' hit dice + constitution modifier. e.g.: Druids hit dice is 1d8. 1st level = 1d8 + constitution modifier. For every level after, add 1d8 roll + constitution modifier." value="21"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="hit-point-temporary">Temporary Hit Points
+      <!-- <br> -->
+      <input id="hit-point-temporary" name="hit-point-temporary" type="text" title="Hit points on top of your maximum health. Some spells/clsses give temporary hit points. Temporary hit points do not regenerate and are the first to be lost when your character is damaged." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+
+      <label for="total-dice-left">Total (Dice)
+      <!-- <br> -->
+      <input id="total-dice-left" name="total-dice-left" type="text" title="Your hit dice based on your chosen class. Total: How many hit dice you have left to roll. e.g.: A Druid's hit dice is a d8. At 3rd level they have 3d8s they can roll during a short rest to regain health equal to what they roll." value="3"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+      
+      <label for="hit-dice">Hit Dice
+      <!-- <br> -->
+      <input id="hit-dice" name="hit-dice" type="text" title="Your hit dice based on your chosen class. Total: How many hit dice you have left to roll. e.g.: A Druid's hit dice is a d8. At 3rd level they have 3d8s they can roll during a short rest to regain health equal to what they roll." value="d8"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+      
+      <label for="death-save-successes">Successes (Death)
+      <!-- <br> -->
+      <input id="death-save-successes" name="death-save-successes" type="text" title="If you are reduced to 0 hit points you are knocked out. Roll 1d20 on your turn to see if you survive or die, healing can revive you. You roll once per turn in combat, 10 or above is a success, 9 or below is a failure. If you roll 3 successes you stabilize, if you roll 3 failures you die." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+      
+      <label for="death-save-failures">Failures (Death)
+      <!-- <br> -->
+      <input id="death-save-failures" name="death-save-failures" type="text" title="If you are reduced to 0 hit points you are knocked out. Roll 1d20 on your turn to see if you survive or die, healing can revive you. You roll once per turn in combat, 10 or above is a success, 9 or below is a failure. If you roll 3 successes you stabilize, if you roll 3 failures you die." value="0"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+    </section>
+    <!-- Personality traits text box: -->
+    <section class="sheet" id="personality-traits">
+      <label for="personality-box">Personality Traits
+      <!-- <br> -->
+      <input id="personality-box" name="personality-box" type="text" title="what" value="Enter Here"></label>
+      <!-- <br> -->
+      <!-- <br> -->
+    </section>
+    <!-- Ideals text box: -->
+    <section class="sheet" id="ideals">
+      <label for="ideals-box">Ideals
+      <!-- <br> -->
+      <textarea id="ideals-box" name="ideals-box" rows="5" cols="33" title="what">Enter Here...</textarea></label>
+      <!-- <br> -->
+      <!-- <br> -->
+    </section>
+    <section class="sheet" id="btn-section">
+      <!-- <br> -->
+      <!-- <br> -->
+      <!-- <br> -->
+  
+      <label for="sheet-button">Click when ready:</label>
+      <button id="sheet-button" onclick="sendSheet()">Save Character</button>
+  
+      <!-- <br> -->
+      <!-- <br> -->
+      <!-- <br> -->
+  
+      <label for="lookup">Character Search:</label>
+      <input id="lookup" name="lookup" type="text">
+      <button id="lookup-btn" onclick="getSheet()">Load Character</button>
+    </section>
+  </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+    </div>
+
+    <section class="sheet" id="attacks-and-spellcasting"></section>
+    <section class="sheet" id="bonds"></section>
+    <section class="sheet" id="flaws"></section>
+    <section class="sheet" id="other"></section>
+    <section class="sheet" id="equipment"></section>
+    <section class="sheet" id="features-and-traits"></section>
+  </main>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="sheet.js"></script>
+</html>
