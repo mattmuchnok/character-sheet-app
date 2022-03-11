@@ -1,5 +1,13 @@
 /* Below line is used for online Google font */
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body {
+  background-image: url(https://media.dnd.wizards.com/styles/media_resources/public/dnd_background_overlay2.jpg);
+  /* background-image: url(https://i0.wp.com/nerdsonearth.com/wp-content/uploads/2019/12/dndmobile-br-1559158957902.jpg?fit=1280%2C720&ssl=1); */
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 h2{
 background-color: #FEFFED;
 padding: 30px 35px;
@@ -27,6 +35,7 @@ border-radius: 10px;
 font-family: raleway;
 float:left;
 margin-top:50px;
+background-color: rgb(34, 119, 45);
 }
 input[type=text],input[type=password]{
 width: 100%;
